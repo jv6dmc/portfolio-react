@@ -1,0 +1,68 @@
+.timeline {
+  .step {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 700px;
+    border-top: solid 2px white;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      width: 100%;
+      padding: 20px 10px;
+    }
+
+    &:after {
+      position: absolute;
+      left: calc(50% - 37px / 2);
+      top: calc(-37px / 2);
+      content: '';
+      border: solid 2px white;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      background-color: darkgray;
+    }
+    .left,
+    .right {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 350px;
+      height: 250px;
+
+      @media screen and (max-width: 768px) {
+        margin: 10px auto;
+        width: 100%;
+      }
+
+      img {
+        box-shadow: none;
+        width: auto;
+        max-width: 100%;
+        max-height: 250px;
+        display: block;
+      }
+    }
+
+    .left {
+      background-color: cadetblue;
+    }
+
+    /* On screens that are 600px or less, set the background color to olive */
+    // @media screen and (min-width: 768px) {
+      .center {
+        border-right: solid 5px white;
+        margin: 0 20px;
+        @media screen and (max-width: 768px) {
+          z-index: -1;
+          position: absolute;
+          height: 100%;
+          margin: 0;
+          left: calc(50% - 2px);
+        }
+      }
+    // }
+    .right {
+      background-color: cornflowerblue;
+    }
+  }
+}

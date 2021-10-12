@@ -1,0 +1,37 @@
+.parent {
+  background-color: hsl(200, 100%, 20%);
+  height: 400px;
+  width: 400px;
+}
+
+.child {
+  background-color: red;
+  height: 50%;
+  width: 50%;
+  animation: left-to-right 1s ease-in forwards infinite alternate;
+  animation-play-state: paused;
+}
+
+.parent:hover .child {
+  animation-play-state: running;
+}
+
+@keyframes left-to-right {
+  0% {
+    background-color: red;
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateY(100%);
+  }
+  50%{
+    background-color: blue;
+  }
+  66% {
+    transform: translateX(100%) translateY(100%);
+  }
+  100% {
+    background-color: green;
+    transform: translateX(100%);
+  }
+}

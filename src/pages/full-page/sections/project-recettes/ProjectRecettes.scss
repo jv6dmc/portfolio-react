@@ -1,0 +1,22 @@
+.project-recettes {
+  position: relative;
+  padding-top: 60px;
+  color: #000000;
+  background-color: #edf1f7;
+  h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slide {
+    padding: 0 50px;
+  }
+
+  .fp-controlArrow.fp-prev {
+    border-color: transparent #000000 transparent transparent;
+  }
+
+  .fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent #000000;
+  }
+}

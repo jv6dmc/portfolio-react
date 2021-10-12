@@ -1,0 +1,22 @@
+.project-salonapreslimage {
+  position: relative;
+  padding-top: 60px;
+  color: #8ab1c6;
+  background-color: #1b1b1b;
+  h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slide {
+    padding: 0 50px;
+  }
+
+  .fp-controlArrow.fp-prev {
+    border-color: transparent #8ab1c6 transparent transparent;
+  }
+
+  .fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent #8ab1c6;
+  }
+}
